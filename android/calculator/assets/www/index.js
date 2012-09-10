@@ -8,14 +8,8 @@ var app = {
 	deviceready : function() {
 		// note that this is an event handler so the scope is that of the event
 		// so we need to call app.report(), and not this.report()
-		app.sizeBody();
 		$(window).bind("orientationchange resize pageshow", app.fixgeometry);
 		app.fixgeometry();
-	},
-	sizeBody : function() {
-		var vwidth = window.innerWidth;
-		var vheight = window.innerHeight;
-		$('#sizeDiv').text("Viewport width = " + vwidth + " height = " + vheight);
 	},
 	fixgeometry : function() {
 		/* Some orientation changes leave the scroll position at something

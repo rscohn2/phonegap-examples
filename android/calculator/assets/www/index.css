@@ -1,3 +1,40 @@
 #content {
+	padding: 0;
+	margin: 0;
+	border: 0;
 	background-color: red;
 }
+
+#display {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10%;
+	background-color: gray;
+}
+
+#keypad {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	position: relative;
+	height: 85%;
+}
+
+button {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+}
+
+#n9 {
+	width: 10%;
+	top: 0;
+	left: 0;
+}
+
+#n8 {
+	top: 0;
+	left: 10%;
+}
+
