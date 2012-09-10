@@ -9,6 +9,7 @@ var app = {
         // note that this is an event handler so the scope is that of the event
         // so we need to call app.report(), and not this.report()
         app.report('deviceready');
+        this.sizeBody();
     },
     report: function(id) { 
         console.log("report:" + id);
@@ -16,5 +17,11 @@ var app = {
         document.querySelector('#' + id + ' .pending').className += ' hide';
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
-    }
+    },
+    sizeBody: function () {
+        // get size of viewport
+        vwidth = window.innerWidth;
+        vheight = windows.innerHeight;
+        $(#sizeDiv).innerHTML = "Width: " + vwidth + " height: " + vheight;
+    },
 };

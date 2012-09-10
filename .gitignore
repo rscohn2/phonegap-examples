@@ -1,1 +1,6 @@
 .DS_Store
+*.apk
+*.ap_
+*.ap_.d
+*.java.d
+build.prop
